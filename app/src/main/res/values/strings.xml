@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="screenName">Account Creation</string>
+    <string name="lblUsername">Username</string>
+    <string name="lblPassword">Password</string>
+    <string name="lblPasswordConfirm">Password Confirmation</string>
+    <string name="usernameHint">Enter a username</string>
+    <string name="btnCreateAccount">Create Account</string>
+    <string name="passwordError">Password Confirmation does not match password</string>
+    <string name="createScreen">Character Creation</string>
+    <string name="lblName">Name:</string>
+    <string name="lblRace">Race:</string>
+    <string name="lblClass">Class:</string>
+    <string-array name="raceGroup">
+        <item>Human</item>
+        <item>Elven</item>
+        <item>Orcish</item>
+        <item>Dwarven</item>
+    </string-array>
+    <string name="radioWarrior">Warrior</string>
+    <string name="radioAssassin">Assassin</string>
+    <string name="radioMage">Mage</string>
+    <string name="radioRanger">Ranger</string>
+    <string name="btnCharacter">Begin Adventure</string>
+</resources>
