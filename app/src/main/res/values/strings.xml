@@ -22,4 +22,18 @@
     <string name="radioMage">Mage</string>
     <string name="radioRanger">Ranger</string>
     <string name="btnCharacter">Begin Adventure</string>
+
+    <string name="showClass">Class:</string>
+    <string name="chosenClass"></string>
+    <string name="showName">Name:</string>
+    <string name="chosenName"></string>
+    <string name="scenarioText"></string>
+    <string name="btnContinue">Next </string>
+    <string name="back">Back</string>
+
+    <string name="option1">Call for the guards</string>
+    <string name="option2">Attempt to break lock</string>
+    <string name="option3">Look out of the window</string>
+    <string name="option4">Go back to sleep</string>
+    <string name="choose">Choose an action:</string>
 </resources>

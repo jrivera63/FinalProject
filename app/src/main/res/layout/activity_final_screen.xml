@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="112dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:text="@string/lblName"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="112dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/showClass"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/idShowName"
+            android:layout_width="112dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:text="@string/chosenName"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.135"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/idShowClass"
+            android:layout_width="112dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/chosenClass"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.135"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/idShowName" />
+
+        <ImageView
+            android:id="@+id/idImage"
+            android:layout_width="381dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idShowClass"
+            app:srcCompat="@drawable/dwarf" />
+
+        <TextView
+            android:id="@+id/scenarioText"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idImage" />
+
+        <RadioGroup
+            android:id="@+id/optionGroup"
+            android:layout_width="345dp"
+            android:layout_height="240dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.437"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+            <RadioButton
+                android:id="@+id/idOption1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/option1"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/idOption2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/option2"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/idOption3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/option3"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/idOption4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/option4"
+                android:textColor="#000000" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/idNext"
+            android:layout_width="87dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="68dp"
+            android:text="@string/btnContinue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/optionGroup"
+            tools:text="@string/btnContinue" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="220dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/choose"
+            android:textColor="#3A3737"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scenarioText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
