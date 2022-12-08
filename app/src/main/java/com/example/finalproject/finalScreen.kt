@@ -2,10 +2,7 @@ package com.example.finalproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.RadioButton
-import android.widget.TextView
+import android.widget.*
 
 class finalScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,6 +10,8 @@ class finalScreen : AppCompatActivity() {
         setContentView(R.layout.activity_final_screen)
 
         val extras = intent.extras
+        val btn = findViewById<Button>(R.id.idNext)
+        val group = findViewById<RadioGroup>(R.id.optionGroup)
 
         if (extras != null){
             val charName = extras.getString("charName")
@@ -49,6 +48,12 @@ class finalScreen : AppCompatActivity() {
             scenario.text = "$charName, the $charRace ${showClass.text}, wakes up in a prison cell. You must have amnesia, for you don't remember much that has happened."
         }
 
-
+        btn.setOnClickListener{
+            if (group.checkedRadioButtonId == -1){
+                Toast.makeText(applicationContext, "Please select an option", Toast.LENGTH_LONG).show()
+            } else {
+                Toast.makeText(applicationContext, "Thank you for viewing my app!", Toast.LENGTH_LONG).show()
+            }
+        }
     }
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="#E3DD71"
     tools:context=".CharacterCreation">
 
     <TextView
@@ -64,9 +64,11 @@
 
     <EditText
         android:id="@+id/idCharName"
-        android:layout_width="177dp"
-        android:layout_height="44dp"
+        android:layout_width="203dp"
+        android:layout_height="39dp"
         android:layout_marginTop="44dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
@@ -83,9 +85,10 @@
         android:layout_width="174dp"
         android:layout_height="47dp"
         android:layout_marginTop="32dp"
-        android:background="#050505"
-        android:backgroundTint="#CD040404"
+        android:background="#000000"
+        android:backgroundTint="#CD2C2B2B"
         android:entries="@array/raceGroup"
+        android:foregroundTint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.26"
         app:layout_constraintStart_toEndOf="@+id/textView7"
